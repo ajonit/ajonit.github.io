@@ -1,0 +1,101 @@
+html, body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Nesting flebox within a flexbox*/
+.flex-container>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  width: 200px;
+  height: 300px;
+  margin: 0px;
+  font-size: 25px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 5px 5px 0px;
+}
+
+.sedans .buttons button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs .buttons button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury .buttons button {
+  color: hsl(179, 100%, 13%);
+}
+
+.icons img {
+  width: 50px;
+}
+
+.titles {
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 1.05em;
+  text-transform: uppercase;
+}
+
+.texts {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.4em;
+}
+
+.buttons button {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  padding: 10px 22px;
+  text-align: center;
+  font-size: 0.45em;
+}
+
+.sedans .buttons button:active {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.suvs .buttons button:active {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.luxury .buttons button:active {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
