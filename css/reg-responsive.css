@@ -1,0 +1,116 @@
+body {
+  font-size: 16px;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url('../regimages/bg-intro-desktop.png');
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.registration {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration>div {
+  /* padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px; */
+  width: 350px;
+  height: 500px;
+  margin: 30px;
+  font-size: 0.95em;
+}
+
+.regtext {
+  padding-top: 200px;
+}
+
+.regtext h2 {
+  font-size: 2em;
+}
+
+.regpromo {
+  font-size: 0.65em;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 5px #CA6D6C;
+  margin-bottom: 20px;
+}
+
+.registerform {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 5px #CA6D6C;
+}
+
+.registerform input {
+  height: 30px;
+  width: 275px;
+  margin: 10px 20px;
+  border-color: lightgrey;
+  border-width: thin;
+  border-radius: 3px;
+  font-size: 0.6em;
+  padding-left: 20px;
+}
+
+.registerform button {
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: #fff;
+  height: 40px;
+  width: 300px;
+  margin: 10px 20px;
+  border-color: hsl(154, 59%, 51%);
+  border-width: thin;
+  border-radius: 3px;
+}
+
+.registerform p {
+  font-size: 0.5em;
+  color: lightgrey;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  color: hsl(0, 100%, 74%);
+}
+
+h3 {
+  font-size: 0.7em;
+}
+
+input:invalid:focus:placeholder-shown {
+  background-color: pink;
+  background: url(../regimages/icon-error.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+@media (max-width: 375px) {
+  .registration {
+    flex-direction: column;
+  }
+
+  .registration .regtext {
+    height: 200px;
+    padding-top: 20px;
+  }
+}
