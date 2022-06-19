@@ -1,0 +1,268 @@
+html {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  background-color: #000;
+}
+
+body {
+  width: 70%;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+}
+
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  background-image: url(../lp-images/bg-hero-desktop.svg);
+  background-color: #F0FAFE;
+  margin-bottom: 40px;
+}
+
+.nav, .hero, .section1, .section2, .section3, .footer {
+  width: 90%;
+  padding: 25px;
+}
+
+.left-hero {
+  width: 40%;
+  margin: 15px;
+}
+
+.left-hero .hero-h2 {
+  font-size: 1.10rem;
+}
+
+.left-hero p {
+  font-size: 0.8rem;
+}
+
+.right-hero {
+  width: 60%;
+  margin: 15px;
+}
+
+.section1, .section2, .section3 {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #E6EEF0;
+  margin: 20px;
+}
+
+.left-section1, .left-section2, .left-section3 {
+  width: 60%;
+  margin: 15px;
+}
+
+.right-section1, .right-section2, .right-section3 {
+  width: 40%;
+  margin: 15px;
+}
+
+.cta {
+  border-radius: 10px;
+  box-shadow: 0 0 5px #E6EEF0;
+  width: 50%;
+  position: relative;
+  z-index: 9;
+  margin: 80px 20% -60px 20%;
+  background-color: #fff;
+}
+
+.cta-heading {
+  padding-top: 30px;
+  width: 70%;
+  margin: auto;
+}
+
+.cta-button {
+  padding-bottom: 30px;
+  width: 50%;
+  margin: auto;
+}
+
+.cta-button button {
+  background-color: hsl(322, 100%, 66%);
+  font-size: 0.8em;
+  color: #fff;
+  height: 40px;
+  border-color: #fff;
+  border-width: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #E6EEF0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  /* width: 95%;
+  margin: auto; */
+}
+
+.logo {
+  width: 20%;
+}
+
+.hero, .section1, .section2, .section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section1 img, .section2 img, .section3 img {
+  height: auto;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  list-style-position: inside;
+}
+
+.about, .career {
+  width: 90%;
+}
+
+.about li, .career li {
+  margin: 10px;
+}
+
+.social li {
+  float: left;
+  margin: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+}
+
+.location, .phone, .email {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.location-icon, .phone-icon, .email-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.soc-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 0.7em;
+}
+
+.address-logo, .location>div, .phone>div, .email>div {
+  margin: 5px;
+}
+
+.address-logo {
+  padding-top: 80px;
+}
+
+.about, .career, .social {
+  padding-top: 120px;
+  padding-left: 0px;
+}
+
+.location-address p, .phone-number p, .email-address p {
+  margin: 0;
+  width: 300px;
+}
+
+.address-logo img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(144deg) brightness(101%) contrast(105%);
+  width: 200px;
+}
+
+.social {
+  height: 50px;
+}
+
+.social img {
+  width: 25px;
+  height: 25px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(144deg) brightness(101%) contrast(105%);
+}
+
+.tryit button {
+  background-color: #fff;
+  font-size: 0.7em;
+  color: hsl(192, 100%, 9%);
+  height: 30px;
+  width: 125px;
+  margin: 10px 20px;
+  border-color: #fff;
+  border-width: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #E6EEF0;
+}
+
+.hero-cta button {
+  background-color: hsl(322, 100%, 66%);
+  font-size: 0.7em;
+  color: #fff;
+  height: 40px;
+  width: 175px;
+  margin: 10px 20px;
+  border-color: #fff;
+  border-width: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #E6EEF0;
+}
+
+@media (max-width: 375px) {
+
+  body {
+    width: 100%;
+    margin: auto;
+  }
+
+    .hero, .section1, .section2, .section3, .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .nav, .hero, .section1, .section2, .section3, .footer {
+      width: 100%;
+      padding: 5px;
+    }
+
+    .about, .career, .social {
+      padding-top: 10px;
+      padding-left: 0px;
+    }
+
+  }
